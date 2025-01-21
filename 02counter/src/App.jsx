@@ -5,10 +5,13 @@ function App() {
   const [counter, setCounter] = useState(0)
 
   const incrementCounter = () => {
-    setCounter(counter+1)
-    setCounter(counter + 1)
+    // Batch Processing: React takes this as a common method and doesn't update the counter variable 2 times (or) n-times.
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+
+    // Using this React takes as the counter is updating every time, so here the counter updates n times.
     setCounter((prevCounter) => (prevCounter + 1))
-    console.log('counter: ', counter);
+    setCounter((prevCounter) => (prevCounter + 1))
   }
 
   const decrementCounter = () => {
