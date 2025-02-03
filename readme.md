@@ -11,7 +11,12 @@ creates instantly because it doesn't install libraries while creating.
 ## Rules/conventions:
 1. The component file name and component function name should start with capital letters.
 
+## Resources:
+1. [useState](https://react.dev/reference/react/useState)
+
+
 ## ERROR:
 1. ![alt text](image.png)
 Solution:
 npm install --save-dev web-vitals
+
